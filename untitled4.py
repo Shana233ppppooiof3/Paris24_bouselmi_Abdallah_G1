@@ -29,7 +29,7 @@ plt.tight_layout(pad = 0)
 plt.show()
 
 # Exercise 2
-# Author : AS
+# Author : BOUZELMAT MATHIEU
 # State: ongoing
 !pip install pillow
 import numpy as np 
@@ -114,7 +114,7 @@ plt.tight_layout(pad=0)
 plt.show()
 
 # Exercise 4
-# Author: BOUZELMAT MATHIEU
+# Author: AS
 # State: ongoing
 
 # Excercise 5
