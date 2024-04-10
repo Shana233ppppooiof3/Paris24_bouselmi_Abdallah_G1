@@ -14,7 +14,12 @@ Original file is located at
 # Exercise 2
 # Author : BM
 # State: ongoing
-
+!pip install pillow
+import numpy as np 
+from PIL import Image,ImageOps
+import matplotlib.pyplot as plt
+from wordcloud import WordCloud,STOPWORDS,ImageColorGenerator
+from scipy.ndimage import gaussian_gradient_magnitude 
 # Exercise 3
 # Author: CA
 # State: ongoing
