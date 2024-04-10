@@ -40,6 +40,64 @@ from scipy.ndimage import gaussian_gradient_magnitude
 # Exercise 3
 # Author: CA
 # State: ongoing
+# White font and excluding the word THY
+from wordcloud import WordCloud, STOPWORDS
+import matplotlib.pyplot as plt
+
+# Assuming you have some text data stored in the variable 'text'
+text = "Your text data goes here"
+
+# Define canvas dimensions
+canvas_width = 1920
+canvas_height = 1080
+
+# Generate word cloud
+wordcloud = WordCloud(width=canvas_width, height=canvas_height).generate(text)
+
+# Add stopwords if necessary
+stopwords = set(STOPWORDS)
+stopwords.add("_____")  # Add your stopwords here
+
+# Display the word cloud
+plt.figure(figsize=(15, 10))
+plt.imshow(wordcloud, interpolation='bilinear')
+plt.axis("off")
+plt.show()
+
+
+from wordcloud import WordCloud, STOPWORDS
+import matplotlib.pyplot as plt
+
+# Assuming you have some text data stored in the variable 'text'
+text = "Your text data goes here"
+
+# Define canvas dimensions
+canvas_width = 1920
+canvas_height = 1080
+
+# Define stopwords
+stopwords = set(STOPWORDS)
+stopwords.add("_____")  # Add your stopwords here
+
+# Generate word cloud
+wordcloud = WordCloud(stopwords=stopwords,
+                      background_color='white',  # Change this to your preferred background color
+                      random_state=1,
+                      colormap='hot',
+                      max_font_size=800,
+                      min_font_size=20,
+                      width=canvas_width,
+                      height=canvas_height).generate(text)
+
+# Save the word cloud to a file
+wordcloud.to_file("simple_wordcloud.png") 
+
+# Display the word cloud
+plt.figure(figsize=(10, 10), facecolor=None)
+plt.imshow(wordcloud, interpolation='bilinear')
+plt.axis("off")
+plt.tight_layout(pad=0)
+plt.show()
 
 # Exercise 4
 # Author: BM
