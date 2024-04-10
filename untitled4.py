@@ -116,7 +116,26 @@ plt.show()
 # Exercise 4
 # Author: AS
 # State: ongoing
+# Exercise 4---------------------------------------------------------------------
+# Use Masks
+romeo_mask= np.array(Image.open("romeo1.jpg"))
 
+# Read image
+wc = WordCloud(mask=romeo_mask,colormap='inferno',random_state=5,max_font_size=50,min_font_size=0)
+
+# Generate wordcloud with text data
+wc.generate(text)
+
+# Save image
+wc.to_file("masked_wc.jpg")
+
+# Show image
+plt.figure(figsize = (10, 10), facecolor=None)
+plt.tight_layout(pad = 0)
+plt.imshow(wc, interpolation='bilinear')
+ 
+# Off axis on image
+plt.show() #show image
 # Excercise 5
 # Author : CA
 # State: ongoing
