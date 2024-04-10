@@ -29,7 +29,7 @@ plt.tight_layout(pad = 0)
 plt.show()
 
 # Exercise 2
-# Author : BM
+# Author : AS
 # State: ongoing
 !pip install pillow
 import numpy as np 
@@ -39,7 +39,7 @@ from wordcloud import WordCloud,STOPWORDS,ImageColorGenerator
 from scipy.ndimage import gaussian_gradient_magnitude 
 
 # Exercise 3
-# Author: CA
+# Author: BM
 # State: ongoing
 # White font and excluding the word THY
 from wordcloud import WordCloud, STOPWORDS
@@ -118,5 +118,5 @@ plt.show()
 # State: ongoing
 
 # Excercise 5
-# Author : SA
+# Author : CA
 # State: ongoing
