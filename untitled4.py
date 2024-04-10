@@ -37,6 +37,7 @@ from PIL import Image,ImageOps
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud,STOPWORDS,ImageColorGenerator
 from scipy.ndimage import gaussian_gradient_magnitude 
+
 # Exercise 3
 # Author: CA
 # State: ongoing
