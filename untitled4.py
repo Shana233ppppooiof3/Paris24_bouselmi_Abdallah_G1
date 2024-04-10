@@ -8,7 +8,7 @@ Original file is located at
 """
 
 #Exercise 1
-# Author Aurillard
+# Author AH
 # State: ongoing
 #Exercise 1----------------------------------------------------------------
 !pip install wordcloud
@@ -39,7 +39,7 @@ from wordcloud import WordCloud,STOPWORDS,ImageColorGenerator
 from scipy.ndimage import gaussian_gradient_magnitude 
 
 # Exercise 3
-# Author: BM
+# Author: BA MALICK
 # State: ongoing
 # White font and excluding the word THY
 from wordcloud import WordCloud, STOPWORDS
@@ -114,7 +114,7 @@ plt.tight_layout(pad=0)
 plt.show()
 
 # Exercise 4
-# Author: BM
+# Author: BOUZELMAT MATHIEU
 # State: ongoing
 
 # Excercise 5
